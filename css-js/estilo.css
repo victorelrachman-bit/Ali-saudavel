@@ -1,0 +1,194 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 16px; 
+}
+
+p{
+    margin: 0;
+    white-space: pre-line;
+}
+
+body{
+    background-color: #fcf2d1;
+    background-size:cover;
+    background-image: url("../imgs/Background.png");
+}
+
+h2{
+    text-align: center;
+    font-size: 2vw;
+}
+
+h3{
+    font-size: 1.7vw;
+}
+
+aside{
+    text-align: center;
+    margin: 0;
+}
+
+header{
+    flex: 1;
+    text-align: center;
+}
+
+nav{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+footer{
+    background-color: #ff737d;
+    height: auto + 10px;
+    padding: 5px;
+    margin-top: 5vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: #ff737d;
+    text-shadow: 0.2px 0.2px 0 black;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #f25165;
+}
+
+li{
+    font-size: 1.5vw;
+    margin: 0.5vw;
+}
+
+li:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    cursor: default;
+}
+
+li:not(:hover)
+{
+    transform: scale(1);
+    transition: 0.1s;
+}
+
+.titulo-logo{
+    display: flex;
+    margin: 0;
+}
+
+.icone-img{
+    width: 150px;
+    max-width: 20vw;
+    margin-top: 2.6rem;
+    margin-left: 2.6rem;
+}
+
+.titulo{
+    color: #85e7ff;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 0px #231f20;
+    margin: 0;
+    margin-top: 4.8rem;
+}
+
+.linq{
+    margin: 1rem;
+    font-size: 2vw; 
+}
+
+.lateral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quad{
+    width: 80%;
+    border: 5px #231f20 solid;
+    border-radius: 8%;
+    padding: 2rem;
+    height: auto;
+    background-color: #85e7ff;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparece 0.6s ease forwards;
+
+}
+
+.quad-intro{
+    width: 80%;
+    border: 5px #231f20 solid;
+    border-radius: 8%;
+    padding: 2rem;
+    height: 80vh;
+    background-color: #85e7ff;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparece 0.6s ease forwards;
+}
+
+.text {
+    font-size: 2vw; 
+    text-align: left;
+}
+
+@keyframes aparece {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px){
+    h2{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    li{
+        font-size: 1.2rem;
+    }
+
+    .titulo{
+        font-size: 1.5rem; 
+        margin-top: 2rem;
+    }
+    .quad-intro{
+        border: 3px #231f20 solid;
+        padding: 1.5rem;
+        height: 105vh;
+    }
+    .quad{
+        border: 3px #231f20 solid;
+        padding: 1.5rem;
+        height: auto;
+    }
+    .icone-img{
+        margin-left: 1rem;
+    }
+    .linq{
+        margin: 5px;
+        font-size: 1rem;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+}
